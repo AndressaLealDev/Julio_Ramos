@@ -6,15 +6,8 @@
   <title>Julio Ramos | Personal Trainer</title>
   <meta name="description" content="Personal Trainer desde 1998. Mais que treino, cuidado. Resultados sustentáveis. Sua saúde, sua melhor versão. Fale comigo!">
   <meta name="theme-color" content="#ff6a00">
-   <div class="cta">
-      
   <!-- Open Graph -->
   <meta property="og:title" content="Julio Ramos | Personal Trainer">
-
-    
-          </a>
-        </div>
-      </div>
   <meta property="og:description" content="Mais que treino, cuidado. Resultados sustentáveis desde 1998.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop">
@@ -33,147 +26,18 @@
         <span class="logo__text">Julio Ramos</span>
         <span class="logo__sub">Personal Trainer</span>
       </a>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Julio Ramos - Personal Trainer</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #111;
-      color: white;
-    }
 
-    /* NAVBAR */
-    .navbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 12px 40px;
-      background-color: #0d0d0d;
-    }
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu">☰</button>
 
-    /* LOGO + NOME */
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .logo-icon {
-      background-color: #f97316; /* círculo laranja */
-      color: white;
-      font-weight: bold;
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 16px;
-    }
-
-    .logo-text {
-      display: flex;
-      flex-direction: column;
-      line-height: 1.2;
-    }
-
-    .logo-text strong {
-      font-size: 16px;
-    }
-
-    .logo-text small {
-      font-size: 12px;
-      color: #bbb;
-    }
-
-    /* SOCIAL ICONS */
-    .social {
-      display: flex;
-      gap: 15px;
-      margin-right: 10px;
-    }
-
-    .social a {
-      font-size: 22px; /* ícones maiores */
-      color: white;
-      transition: transform 0.2s, color 0.2s;
-    }
-
-    .social a:hover {
-      transform: scale(1.2);
-    }
-
-    .fa-whatsapp { color: #25D366; }
-    .fa-instagram { color: #E1306C; }
-
-    /* MENU */
-    .menu {
-      display: flex;
-      gap: 20px;
-    }
-
-    .menu a {
-      text-decoration: none;
-      color: white;
-      font-size: 15px;
-      transition: color 0.2s;
-    }
-
-    .menu a:hover {
-      color: #f97316; /* laranja destaque */
-    }
-
-    /* Agrupando social + menu */
-    .right-side {
-      display: flex;
-      align-items: center;
-      gap: 25px;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <nav class="navbar">
-      <!-- LOGO + NOME -->
-      <div class="logo">
-        <div class="logo-icon">J</div>
-        <div class="logo-text">
-          <strong>Julio Ramos</strong>
-          <small>Personal Trainer</small>
-        </div>
-      </div>
-
-      <!-- REDES SOCIAIS + MENU -->
-      <div class="right-side">
-        <div class="social">
-          <a href="https://wa.me/5541984952865" target="_blank">
-            <i class="fa-brands fa-whatsapp"></i>
-          </a>
-          <a href="https://www.instagram.com/julioramospersonaltrainer" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-        </div>
-
-        <div class="menu">
-          <a href="#inicio">Início</a>
-          <a href="#sobre">Sobre</a>
-          <a href="#servicos">Serviços</a>
-          <a href="#resultados">Resultados</a>
-          <a href="#contato">Contato</a>
-        </div>
-      </div>
-    </nav>
+      <nav class="nav" id="nav">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
   </header>
-
-</body>
-</html>
-
 
   <!-- Hero -->
   <section class="hero" id="inicio" aria-label="Seção inicial">
@@ -186,8 +50,14 @@
         Sua saúde, sua melhor versão.
       </p>
 
-    
-      
+      <div class="cta">
+        <a class="btn btn--primary" target="_blank"
+           href="https://wa.me/5541984952865?text=Ol%C3%A1%20Julio!%20Cheguei%20pelo%20site%20e%20quero%20saber%20sobre%20treinos%20personalizados.">
+          Fale no WhatsApp
+        </a>
+        <a class="btn btn--ghost" target="_blank"
+           href="https://www.instagram.com/julioramospersonaltrainer/">
+          Instagram
         </a>
       </div>
 
