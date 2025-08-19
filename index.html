@@ -34,68 +34,142 @@
         <span class="logo__sub">Personal Trainer</span>
       </a>
   
-      <!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Botões Redes Sociais</title>
-  <!-- Font Awesome para os ícones -->
+  <title>Julio Ramos - Personal Trainer</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    .social-buttons {
-      display: flex;
-      gap: 15px; /* espaço entre os botões */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
     }
 
-    .social-buttons a {
-      text-decoration: none;
-      color: white;
-      padding: 12px 18px;
-      border-radius: 8px;
-      font-size: 18px;
+    /* NAVBAR */
+    .navbar {
       display: flex;
       align-items: center;
-      gap: 8px;
-      font-family: Arial, sans-serif;
+      justify-content: space-between;
+      padding: 12px 40px;
+      background-color: #0d0d0d;
     }
 
-    .whatsapp {
-      background-color: #25D366;
+    /* LOGO + NOME */
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
     }
 
-    .instagram {
-      background-color: #E1306C;
+    .logo-icon {
+      background-color: #f97316; /* círculo laranja */
+      color: white;
+      font-weight: bold;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+
+    .logo-text strong {
+      font-size: 16px;
+    }
+
+    .logo-text small {
+      font-size: 12px;
+      color: #bbb;
+    }
+
+    /* SOCIAL ICONS */
+    .social {
+      display: flex;
+      gap: 15px;
+      margin-right: 40px;
+    }
+
+    .social a {
+      font-size: 20px;
+      color: white;
+      transition: transform 0.2s, color 0.2s;
+    }
+
+    .social a:hover {
+      transform: scale(1.2);
+    }
+
+    .fa-whatsapp { color: #25D366; }
+    .fa-instagram { color: #E1306C; }
+
+    /* MENU */
+    .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      transition: color 0.2s;
+    }
+
+    .menu a:hover {
+      color: #f97316; /* laranja destaque */
+    }
+
+    /* Agrupando social + menu */
+    .right-side {
+      display: flex;
+      align-items: center;
+      gap: 25px;
     }
   </style>
 </head>
 <body>
 
-  <div class="social-buttons">
-    <!-- Botão WhatsApp -->
-    <a class="whatsapp" href="https://wa.me/5541984952865" target="_blank">
-      <i class="fa-brands fa-whatsapp"></i> WhatsApp
-    </a>
+  <header>
+    <nav class="navbar">
+      <!-- LOGO + NOME -->
+      <div class="logo">
+        <div class="logo-icon">J</div>
+        <div class="logo-text">
+          <strong>Julio Ramos</strong>
+          <small>Personal Trainer</small>
+        </div>
+      </div>
 
-    <!-- Botão Instagram -->
-    <a class="instagram" href="https://www.instagram.com/julioramospersonaltrainer target="_blank">
-      <i class="fa-brands fa-instagram"></i> Instagram
-    </a>
-  </div>
+      <!-- REDES SOCIAIS + MENU -->
+      <div class="right-side">
+        <div class="social">
+          <a href="https://wa.me/5541984952865" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/julioramospersonaltrainer" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <div class="menu">
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#resultados">Resultados</a>
+          <a href="#contato">Contato</a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
 </body>
 </html>
-
-
-
-      <nav class="nav" id="nav">
-        <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#resultados">Resultados</a>
-        <a href="#contato">Contato</a>
-      </nav>
-    </div>
-  </header>
 
   <!-- Hero -->
   <section class="hero" id="inicio" aria-label="Seção inicial">
